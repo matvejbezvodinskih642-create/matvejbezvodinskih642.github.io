@@ -1,0 +1,431 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #001a1a;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.heads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #002b2b;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.menus {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #5d8a84;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-transform: lowercase;
+}
+
+.imags {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 6px solid #1a8bba;
+    /* Синее свечение как на фото */
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(26, 139, 186, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002b2b;
+
+}
+
+
+
+.on {}
+
+
+.text-conteiner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+
+
+.text-con {
+    width: 50%;
+
+
+}
+
+.fons {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+}
+
+.text-conteiner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+}
+
+
+
+.fon {
+    height: 1000px;
+    width: 100%;
+
+}
+
+.foto {
+    border-radius: 50%;
+    max-width: 512px;
+    max-height: 512px;
+    margin: 15px;
+    object-fit: cover;
+    padding: 1px;
+
+}
+
+.profil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #5d8a84;
+    border-radius: 40%;
+
+}
+
+.loli {
+    position: relative;
+    background: radial-gradient(circle at center, #0a3d36 0%, #000c0a 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+}
+
+.main-glow {}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    /* Увеличили расстояние, чтобы не было зажатости */
+    position: relative;
+
+}
+
+.feedback section-bg {}
+
+
+.form-container {
+    background-color: #002b2b;
+    width: 300px;
+    border: 1px solid #5d8a84;
+}
+
+
+
+.form-header {
+    background-color: #063d36;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+
+
+.close-x {}
+
+
+
+.form-empty-space {
+    height: 100px;
+    background: white;
+
+}
+
+.backpack-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    /* Заполняет круг, сохраняя пропорции */
+    padding: 20px;
+    border-radius: 50%;
+    border: 4px solid #1a8bba;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(26, 139, 186, 0.5);
+
+}
+
+.pops {
+    background-color: #0d4d36;
+    color: white;
+    border: 2px solid #000;
+    padding: 15px 80px;
+    font-size: 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 0 #05261b;
+    /* 3D эффект */
+    transition: all 0.3s ease;
+
+
+}
+
+
+.pops:hover {
+    transform: translateY(-3px) scale(1.05);
+    /* Приподнимаем и увеличиваем */
+    box-shadow: 0 10px 25px rgba(26, 139, 186, 0.6);
+    /* Усиливаем свечение */
+}
+
+.pops:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+.on {
+    background: radial-gradient(circle at center, #0a3d36 0%, #001a1a 100%);
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 2px solid #07473F;
+}
+
+.sulka {
+    display: flex;
+    gap: 15px;
+}
+
+
+from input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+
+@keyframes pulse-blue {
+    0% {
+        box-shadow: 0 0 15px rgba(26, 139, 186, 0.4),
+            inset 0 0 10px rgba(26, 139, 186, 0.2);
+    }
+
+    50% {
+        /* В пике анимации свечение становится ярче и шире */
+        box-shadow: 0 0 40px rgba(26, 139, 186, 0.8),
+            inset 0 0 20px rgba(26, 139, 186, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 15px rgba(26, 139, 186, 0.4),
+            inset 0 0 10px rgba(26, 139, 186, 0.2);
+    }
+}
+
+
+.premium,
+.imags,
+.backpack-img {
+    animation: pulse-blue 3s infinite ease-in-out;
+}
+
+
+.feedback-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #0a3d36 0%, #000c0a 100%);
+    overflow: hidden;
+    padding: 100px 50px;
+}
+
+.content-wrapper.flex-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mail-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: rgba(0, 43, 43, 0.7);
+    /* Прозрачный фон */
+    border: 3px solid #1a8bba;
+    /* Синий контур (как у рюкзака) */
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(26, 139, 186, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.mail-card:hover {
+    transform: translateY(-5px);
+    /* Визитка всплывает при наведении */
+}
+
+.mail-icon img {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    /* Сделаем иконку белой */
+}
+
+.mail-text h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #5d8a84;
+    /* Тот самый цвет текста */
+}
+
+
+.email-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+.email-link:hover {
+    color: #1a8bba;
+    /* Почта синеет при наведении */
+}
+
+
+.premium-form-card {
+    width: 350px;
+    background-color: rgba(0, 43, 43, 0.9);
+    /* Темно-зеленый, почти непрозрачный */
+    border: 2px solid #5d8a84;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+
+.form-header {
+    background-color: #063d36;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+    color: #5d8a84;
+    text-transform: lowercase;
+    /* Все строчные, как на рефе */
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #5d8a84;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.form-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-body input {
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    /* Прозрачный фон ввода */
+    border: none;
+    border-bottom: 2px solid #5d8a84;
+    /* Золотое подчеркивание */
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-body input:focus {
+    border-bottom-color: #d4af37;
+    /* Становится золотым при клике */
+}
+
+.submit-btn {
+    margin-top: 20px;
+    background: none;
+    border: 2px solid #d4af37;
+    /* Золотая рамка */
+    color: #d4af37;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    text-transform: capitalize;
+    /* Первая буква заглавная */
+}
+
+.submit-btn:hover {
+    background-color: #d4af37;
+    /* Золотой фон при наведении */
+    color: #002b2b;
+}
+
+.feedback-section .corner-line {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 3px solid transparent;
+}
+
+.top-left {
+    top: 30px;
+    left: 30px;
+    border-top-color: #d4af37;
+    border-left-color: #d4af37;
+}
+
+.bottom-right {
+    bottom: 30px;
+    right: 30px;
+    border-bottom-color: #d4af37;
+    border-right-color: #d4af37;
+}
